@@ -45,6 +45,7 @@ function handleText(textNode)  {
     v = v.replace(/\. despite all evidence to the contrary\./g,", despite all evidence to the contrary.");
     v = v.replace(/\.\" despite all evidence to the contrary\./g,",\" despite all evidence to the contrary.");
     v = v.replace(/\.” despite all evidence to the contrary\./g,",” despite all evidence to the contrary.");
+    v = v.replace(/despite all evidence to the contrary. despite all evidence to the contrary./g,"despite all evidence to the contrary.");
 	
 	textNode.nodeValue = v;
 }
