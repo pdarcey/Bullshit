@@ -29,22 +29,22 @@ function walk(node) {
 function handleText(textNode)  {
 	var v = textNode.nodeValue;
 	
-	v = v.replace(/says.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/said.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/saying.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/claims.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/claiming.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/claimed.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/tells.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/telling.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/told.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/responds.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/responding.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
-	v = v.replace(/responded.*?["“‘]?.*["”’]?[\ .?!;]?/g, function myFunction(x){return x + " despite all evidence to the contrary.";});
+	v = v.replace(/says.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/said.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/saying.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/claims.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/claiming.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/claimed.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/tells.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/telling.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/told.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/responds.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/responding.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
+	v = v.replace(/responded.*?["“‘]?.*?(\.\ )[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
 	
-    v = v.replace(/\. despite all evidence to the contrary\./g,", despite all evidence to the contrary.");
-    v = v.replace(/\.\" despite all evidence to the contrary\./g,",\" despite all evidence to the contrary.");
-    v = v.replace(/\.” despite all evidence to the contrary\./g,",” despite all evidence to the contrary.");
+    v = v.replace(/\.  despite all evidence to the contrary\./g,", despite all evidence to the contrary.");
+    v = v.replace(/\.\"  despite all evidence to the contrary\./g,",\" despite all evidence to the contrary.");
+    v = v.replace(/\.”  despite all evidence to the contrary\./g,",” despite all evidence to the contrary.");
     v = v.replace(/despite all evidence to the contrary. despite all evidence to the contrary./g,"despite all evidence to the contrary.");
 	
 	textNode.nodeValue = v;
