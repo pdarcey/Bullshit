@@ -39,19 +39,6 @@ function handleText(textNode)  {
 	    });
 	});
 	
-// 	v = v.replace(/says.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + ", despite all evidence to the contrary.";});
-// 	v = v.replace(/said.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-// 	v = v.replace(/saying.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-// 	v = v.replace(/claims.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-// 	v = v.replace(/claiming.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-// 	v = v.replace(/claimed.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-// 	v = v.replace(/tells.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-// 	v = v.replace(/telling.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-// 	v = v.replace(/told.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-// 	v = v.replace(/responds.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-// 	v = v.replace(/responding.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-// 	v = v.replace(/responded.*?["“‘]?.*?(\.[\ \n])[?!;]?["”’]?/g, function myFunction(x){return x + " despite all evidence to the contrary. ";});
-	
     v = v.replace(/\. despite all evidence to the contrary\./g,", despite all evidence to the contrary.");
     v = v.replace(/\.\n  despite all evidence to the contrary\./g,", despite all evidence to the contrary.");
     v = v.replace(/\.\"  despite all evidence to the contrary\./g,",\" despite all evidence to the contrary.");
