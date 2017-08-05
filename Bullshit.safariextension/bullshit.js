@@ -31,7 +31,7 @@ function handleText(textNode)  {
 	var list = [ "says", "said", "saying", "claims", "claiming", "claimed", "tells", "telling", "told", "responds", "responding", "responded", "rejects", "rejecting", "rejected" ];
 	
 	list.forEach(function(word) {
-	    var find = word + ".*?[\"“‘]?.*?\\."
+	    var find = word + ".*?[\"“‘]?.*?[.!?]((?=\\s[A-z])|$)"
 	    var regex = new RegExp(find,"g");
 	    v = v.replace(regex, function replacement(found) {
 	        console.log('Result is' + found);
